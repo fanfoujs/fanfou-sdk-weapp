@@ -86,7 +86,7 @@ ff.xauth()
 ff.xauth()
 ff.get(uri, params)
 ff.post(uri, params)
-ff.upload(uri, filePaths, parameters)
+ff.upload(uri, fileObject, parameters)
 ```
 
 **Examples**
