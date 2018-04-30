@@ -101,9 +101,19 @@ ff.post('/statuses/update', {status: 'post test'})
   .then(res => console.log(res))
   .catch(err => console.log(err))
 
-ff.upload('/photos/upload', fileObject, {})
-  .then(res => console.log(res))
-  .catch(err => console.log(err))
+// Upload
+wx.chooseImage({
+  count: 1,
+  sizeType: ['original', 'compressed'],
+  sourceType: ['album', 'camera'],
+  success: res => {
+    const {tempFilePaths} = res
+    const [fileObject] = tempFilePaths
+    ff.upload('/photos/upload', fileObject, {})
+      .then(res => console.log(res))
+      .catch(err => console.log(err))
+  }
+})
 
 // XAuth
 ff.xauth()
