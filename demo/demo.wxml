@@ -1,0 +1,7 @@
+<view>
+  <input placeholder="consumer key" bindinput="keyInput" value="{{key}}" />
+  <input placeholder="consumer secret" bindinpu="secretInput" value="{{secret}}" />
+  <input placeholder="username" bindinput="usernameInput" />
+  <input placeholder="password" bindinput="passwordInput" password />
+  <button bindtap="testTap">TEST</button>
+</view>

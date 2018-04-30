@@ -1,0 +1,7 @@
+demo
+node_modules
+app.js
+app.json
+package-lock.json
+project.config.json
+.travis.yml
