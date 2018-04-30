@@ -1,6 +1,6 @@
 {
   "name": "fanfou-sdk-weapp",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Fanfou SDK for WeApp",
   "main": "src/index.js",
   "scripts": {
