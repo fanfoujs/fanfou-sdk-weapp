@@ -3,7 +3,7 @@
 [![](https://img.shields.io/travis/LitoMore/fanfou-sdk-weapp/master.svg)](https://travis-ci.org/LitoMore/fanfou-sdk-weapp)
 [![](https://img.shields.io/npm/v/fanfou-sdk-weapp.svg)](https://www.npmjs.com/package/fanfou-sdk-weapp)
 [![](https://img.shields.io/npm/l/fanfou-sdk-weapp.svg)](https://github.com/LitoMore/fanfou-sdk-weapp/blob/master/LICENSE)
-[![](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
 Fanfou SDK for WeApp
 
