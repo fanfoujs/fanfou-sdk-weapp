@@ -15,7 +15,10 @@ Fanfou SDK for WeApp
 $ npm i fanfou-sdk-weapp
 ```
 
-Or you can copy the `src` directory to your project.
+Or either of this below:
+
+- Add this repo as submodule to your project
+- Copy the `src` directory to your project
 
 ## Usage
 
