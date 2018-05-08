@@ -61,7 +61,7 @@ class Fanfou {
   }
 
   get (uri, parameters) {
-    const url = this.protocol + '//' + this.api_domain + uri + '.json'
+    const url = this.protocol + '//' + this.apiDomain + uri + '.json'
     return new Promise((resolve, reject) => {
       this.oauth.get(
         url + '?' + qs.stringify(parameters),
@@ -83,7 +83,7 @@ class Fanfou {
 
   post (uri, parameters) {
     return new Promise((resolve, reject) => {
-      const url = this.protocol + '//' + this.api_domain + uri + '.json'
+      const url = this.protocol + '//' + this.apiDomain + uri + '.json'
       this.oauth.post(
         url,
         this.oauthToken,
@@ -105,7 +105,7 @@ class Fanfou {
 
   upload (uri, fileObject, parameters) {
     const method = 'POST'
-    const url = this.protocol + '//' + this.api_domain + uri + '.json'
+    const url = this.protocol + '//' + this.apiDomain + uri + '.json'
     const params = {
       oauth_consumer_key: this.consumerKey,
       oauth_token: this.oauthToken,
