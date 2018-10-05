@@ -132,7 +132,8 @@ ff.xauth()
 
 - [xiaofan](https://github.com/fanfoujs/xiaofan) - WeApp for Fanfou
 - [fanta](https://github.com/LitoMore/fanta) - Another WeApp for Fanfou
-- [fanfou-sdk](https://github.com/LitoMore/fanfou-sdk-node) - Fanfou SDK for Node.js
+- [fanfou-sdk-node](https://github.com/LitoMore/fanfou-sdk-node) - Fanfou SDK for Node.js
+- [fanfou-sdk-browser](https://github.com/LitoMore/fanfou-sdk-browser) - Fanfou SDK for browser
 
 ## License
 
