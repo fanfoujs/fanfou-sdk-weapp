@@ -75,15 +75,15 @@ class Status {
   }
 
   _getSourceUrl () {
-    if (this.source.match(/<a href="(.+)" target="_blank">.+<\/a>/)) {
-      return this.source.match(/<a href="(.+)" target="_blank">.+<\/a>/)[1]
+    if (this.source.match(/<a href="(.*)" target="_blank">.+<\/a>/)) {
+      return this.source.match(/<a href="(.*)" target="_blank">.+<\/a>/)[1]
     }
     return ''
   }
 
   _getSourceName () {
-    if (this.source.match(/<a href=".+" target="_blank">(.+)<\/a>/)) {
-      return this.source.match(/<a href=".+" target="_blank">(.+)<\/a>/)[1]
+    if (this.source.match(/<a href=".*" target="_blank">(.+)<\/a>/)) {
+      return this.source.match(/<a href=".*" target="_blank">(.+)<\/a>/)[1]
     }
     return this.source
   }
