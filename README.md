@@ -47,7 +47,6 @@ ff.get('/statuses/home_timeline', {format: 'html'})
 
 ```javascript
 const ff = new Fanfou({
-  authType: 'xauth',
   consumerKey: '',
   consumerSecret: '',
   username: '',
@@ -70,7 +69,6 @@ ff.xauth()
 
 **Options**
 
-- `authType`: Support `oauth` and `xuath`, default is `oauth`
 - `consumerKey`: The consumer key
 - `consumerSecret`: The consumer secret
 - `oauthToken`: The OAuth token
