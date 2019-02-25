@@ -11,7 +11,7 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.0",
+	"libVersion": "2.6.1",
 	"appid": "touristappid",
 	"projectname": "fanfou-sdk-weapp",
 	"condition": {

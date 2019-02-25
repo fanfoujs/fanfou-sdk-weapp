@@ -25,9 +25,6 @@
       "App",
       "wx"
     ],
-    "ignores": [
-      "src/modules/**"
-    ],
     "rules": {
       "camelcase": 0,
       "max-params": [
@@ -40,13 +37,8 @@
           "capIsNew": false
         }
       ],
-      "space-before-function-paren": [
-        "error",
-        "always"
-      ],
-      "unicorn/import-index": 0
-    },
-    "semicolon": false,
-    "space": 2
+      "unicorn/import-index": 0,
+      "unicorn/no-abusive-eslint-disable": 0
+    }
   }
 }
