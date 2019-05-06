@@ -31,7 +31,7 @@ Or either of this below:
 ```javascript
 const Fanfou = require('fanfou-sdk-weapp')
 // or
-const Fanfou = require('./src/index')
+const Fanfou = require('./src/index');
 ```
 
 **OAuth**
@@ -42,11 +42,11 @@ const ff = new Fanfou({
   consumerSecret: '',
   oauthToken: '',
   oauthTokenSecret: ''
-})
+});
 
 ff.get('/statuses/home_timeline', {format: 'html'})
   .then(res => console.log(res))
-  .catch(err => console.log(err))
+  .catch(err => console.log(err));
 ```
 
 **XAuth**
@@ -57,19 +57,19 @@ const ff = new Fanfou({
   consumerSecret: '',
   username: '',
   password: ''
-})
+});
 
 ff.xauth()
   .then(res => {
     console.log(res)
     ff.get('/statuses/public_timeline', {count: 10})
       .then(res => console.log(res))
-      .catch(err => console.log(err))
+      .catch(err => console.log(err));
 
     ff.post('/statuses/update', {status: 'Hi Fanfou'})
       .then(res => console.log(res))
-      .catch(err => console.log(err))
-  })
+      .catch(err => console.log(err));
+  });
 
 ```
 
@@ -84,16 +84,17 @@ ff.xauth()
 - `protocol`: Set the prototol, default is `https:`
 - `apiDomain`: Set the API domain, default is `api.fanfou.com`
 - `oauthDomain`: Set the OAuth domain, default is `fanfou.com`
+- `hooks`: Hooks allow modifications with OAuth
 
 > For more Fanfou API docs, see the [Fanfou API doc](https://github.com/FanfouAPI/FanFouAPIDoc/wiki).
 
 ## API
 
 ```javascript
-ff.xauth()
-ff.get(uri, params)
-ff.post(uri, params)
-ff.upload(uri, fileObject, parameters)
+ff.xauth();
+ff.get(uri, params);
+ff.post(uri, params);
+ff.upload(uri, fileObject, parameters);
 ```
 
 **Examples**
@@ -102,11 +103,11 @@ ff.upload(uri, fileObject, parameters)
 // OAuth
 ff.get('/statuses/home_timeline', {})
   .then(res => console.log(res))
-  .catch(err => console.log(err))
+  .catch(err => console.log(err));
 
 ff.post('/statuses/update', {status: 'post test'})
   .then(res => console.log(res))
-  .catch(err => console.log(err))
+  .catch(err => console.log(err));
 
 // Upload
 wx.chooseImage({
@@ -114,13 +115,13 @@ wx.chooseImage({
   sizeType: ['original', 'compressed'],
   sourceType: ['album', 'camera'],
   success: res => {
-    const {tempFilePaths} = res
-    const [fileObject] = tempFilePaths
+    const {tempFilePaths} = res;
+    const [fileObject] = tempFilePaths;
     ff.upload('/photos/upload', fileObject, {})
       .then(res => console.log(res))
-      .catch(err => console.log(err))
+      .catch(err => console.log(err));
   }
-})
+});
 
 // XAuth
 ff.xauth()
@@ -129,7 +130,27 @@ ff.xauth()
       .then(res => console.log(res))
       .catch(err => console.log(err))
   })
-  .catch(err => console.log(err))
+  .catch(err => console.log(err));
+```
+
+**Tips**
+
+Use `hooks` for your reverse-proxy server
+
+```javascript
+const ff = new Fanfou({
+  consumerKey: '',
+  consumerSecret: '',
+  oauthToken: '',
+  oauthTokenSecret: '',
+  apiDomain: 'api.example.com',
+  oauthDomain: 'example.com',
+  hooks: {
+    baseString: str => {
+      return str.replace('example.com', 'fanfou.com');
+    }
+  }
+});
 ```
 
 ## Related
