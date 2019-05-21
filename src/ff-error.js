@@ -22,6 +22,7 @@ class FanfouError extends Error {
 				} else {
 					this.message = `${error.statusCode} error`;
 				}
+
 				break;
 			}
 
@@ -33,6 +34,7 @@ class FanfouError extends Error {
 				} else {
 					this.message = `${error.statusCode} error`;
 				}
+
 				break;
 			}
 

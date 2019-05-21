@@ -7,7 +7,7 @@ function decodeComponents(components, split) {
 	try {
 		// Try to decode the entire string first
 		return decodeURIComponent(components.join(''));
-	} catch (err) {
+	} catch (error) {
 		// Do nothing
 	}
 
@@ -27,7 +27,7 @@ function decodeComponents(components, split) {
 function decode(input) {
 	try {
 		return decodeURIComponent(input);
-	} catch (err) {
+	} catch (error) {
 		let tokens = input.match(singleMatcher);
 
 		for (let i = 1; i < tokens.length; i++) {
@@ -52,7 +52,7 @@ function customDecodeURIComponent(input) {
 		try {
 			// Decode as big chunks as possible
 			replaceMap[match[0]] = decodeURIComponent(match[0]);
-		} catch (err) {
+		} catch (error) {
 			const result = decode(match[0]);
 
 			if (result !== match[0]) {
@@ -87,7 +87,7 @@ module.exports = function (encodedURI) {
 
 		// Try the built in decoder first
 		return decodeURIComponent(encodedURI);
-	} catch (err) {
+	} catch (error) {
 		// Fallback to a more advanced decoder
 		return customDecodeURIComponent(encodedURI);
 	}

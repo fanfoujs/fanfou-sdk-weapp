@@ -159,6 +159,7 @@ OAuth.prototype.deParam = function (string) {
 				// Replace the value with an array containing the already present value
 				data[item[0]] = [data[item[0]]];
 			}
+
 			// And add the new found value to it
 			data[item[0]].push(decodeURIComponent(item[1]));
 		} else {
@@ -205,6 +206,7 @@ OAuth.prototype.percentEncodeData = function (data) {
 		} else {
 			value = this.percentEncode(value);
 		}
+
 		result[this.percentEncode(key)] = value;
 	});
 

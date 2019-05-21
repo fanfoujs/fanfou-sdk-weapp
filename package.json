@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/LitoMore/fanfou-sdk-weapp#readme",
   "devDependencies": {
-    "xo": "^0.21.0"
+    "xo": "^0.24.0"
   },
   "xo": {
     "globals": [

@@ -259,6 +259,7 @@ class Fanfou {
 				}
 			}
 		}
+
 		return arr;
 	}
 
