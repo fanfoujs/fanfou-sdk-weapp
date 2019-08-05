@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LitoMore/fanfou-sdk-weapp.git"
+    "url": "git+https://github.com/fanfoujs/fanfou-sdk-weapp.git"
   },
   "author": "LitoMore",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LitoMore/fanfou-sdk-weapp/issues"
+    "url": "https://github.com/fanfoujs/fanfou-sdk-weapp/issues"
   },
-  "homepage": "https://github.com/LitoMore/fanfou-sdk-weapp#readme",
+  "homepage": "https://github.com/fanfoujs/fanfou-sdk-weapp#readme",
   "devDependencies": {
     "xo": "^0.24.0"
   },

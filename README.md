@@ -1,13 +1,13 @@
 # fanfou-sdk-weapp
 
-[![](https://img.shields.io/travis/LitoMore/fanfou-sdk-weapp/master.svg)](https://travis-ci.org/LitoMore/fanfou-sdk-weapp)
+[![](https://img.shields.io/travis/fanfoujs/fanfou-sdk-weapp/master.svg)](https://travis-ci.org/fanfoujs/fanfou-sdk-weapp)
 [![](https://img.shields.io/npm/v/fanfou-sdk-weapp.svg)](https://www.npmjs.com/package/fanfou-sdk-weapp)
-[![](https://img.shields.io/npm/l/fanfou-sdk-weapp.svg)](https://github.com/LitoMore/fanfou-sdk-weapp/blob/master/LICENSE)
+[![](https://img.shields.io/npm/l/fanfou-sdk-weapp.svg)](https://github.com/fanfoujs/fanfou-sdk-weapp/blob/master/LICENSE)
 [![](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
 Fanfou SDK for WeApp
 
-> The package is for WeApp, if you are developing with Node.js, please use [fanfou-sdk](https://github.com/LitoMore/fanfou-sdk-node).
+> The package is for WeApp, if you are developing with Node.js, please use [fanfou-sdk](https://github.com/fanfoujs/fanfou-sdk-node).
 
 ## Install
 
@@ -155,11 +155,11 @@ const ff = new Fanfou({
 
 ## Related
 
-- [xiaofan](https://github.com/fanfoujs/xiaofan) - WeApp for Fanfou
+- [xiaofan](https://github.com/fanfoujs/xiaofan-wechat) - WeApp for Fanfou
 - [fanta](https://github.com/LitoMore/fanta) - Another WeApp for Fanfou
-- [fanfou-sdk-node](https://github.com/LitoMore/fanfou-sdk-node) - Fanfou SDK for Node.js
-- [fanfou-sdk-browser](https://github.com/LitoMore/fanfou-sdk-browser) - Fanfou SDK for browser
+- [fanfou-sdk-node](https://github.com/fanfoujs/fanfou-sdk-node) - Fanfou SDK for Node.js
+- [fanfou-sdk-browser](https://github.com/fanfoujs/fanfou-sdk-browser) - Fanfou SDK for browser
 
 ## License
 
-MIT © [LitoMore](https://github.com/LitoMore)
+MIT
