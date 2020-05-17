@@ -158,6 +158,7 @@ const ff = new Fanfou({
 - [xiaofan](https://github.com/fanfoujs/xiaofan-wechat) - WeApp for Fanfou
 - [fanta](https://github.com/LitoMore/fanta) - Another WeApp for Fanfou
 - [fanfou-sdk-node](https://github.com/fanfoujs/fanfou-sdk-node) - Fanfou SDK for Node.js
+- [fanfou-sdk-deno](https://github.com/LitoMore/fanfou-sdk-deno) - Fanfou SDK for Deno
 - [fanfou-sdk-browser](https://github.com/fanfoujs/fanfou-sdk-browser) - Fanfou SDK for browser
 - [fanfou-sdk-python](https://github.com/LitoMore/fanfou-sdk-python) - Fanfou SDK for Python
 
